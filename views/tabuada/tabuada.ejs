@@ -1,0 +1,21 @@
+<% include ../partials/header.ejs %>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Tabuada do número <%= num %></h1>
+        <p class="lead">Números de 1 - 10</p>
+
+        <table class="table table-striped table-bordered">
+            <% tabuadas.map(item => { %>
+                <tr>
+                    <td><%= item.num %> x <%= item.i %> </td>
+                    <td><%= item.resultado %></td>
+                </tr>
+            <% }) %>
+        </table>
+      </div>
+
+    </div><!-- /.container -->
+
+<% include ../partials/footer.ejs %>
